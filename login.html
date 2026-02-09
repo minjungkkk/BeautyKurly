@@ -13,29 +13,26 @@
   <div class="login_container">
   <div class="top_icons">
     <i class="fas fa-times close_btn"></i>
-  </div>
-
+  </div><!-- top_icons -->
 
   <div class="logo">
     <img src="images/logo.jpg" alt="컬리로고">
-  </div>
-
+  </div><!-- logo -->
 
   <form class="login_form" action="login" method="POST">
     <div class="input_group">
       <input type="text" placeholder="아이디" id="username">
-    </div>
+    </div><!-- input_group -->
 
     <div class="input_group password_group">
       <input type="password" placeholder="비밀번호" id="password">
         <i class="fas fa-eye-slash toggle_password"></i>
-    </div>
-
+    </div><!-- password_group -->
 
   <div class="checkbox_group">
     <input type="checkbox" id="save_id">
       <label for="save_id">아이디 저장</label>
-  </div>
+  </div><!-- checkbox_group -->
 
     <button type="button" class="login_btn">로그인</button>
     <button type="button" class="signup_btn">회원가입</button>
@@ -44,18 +41,17 @@
     <button type="button">아이디 찾기</button>
     <span>|</span>
     <button type="button">비밀번호 찾기</button>
-  </div>
-</form>
+  </div><!-- find_info -->
+</form><!-- login_form -->
   <hr>
   <p class="social_text">네이버, 카카오로 <strong>간편하게</strong> 시작하세요</p>
     <div class="social_buttons">
       <button class="naver_btn"><img src="images/naver.jpg" alt="naver" width="30px" height="30px"> 네이버로 시작하기</button>
       <button class="kakao_btn"><img src="images/kakao.jpg" alt="kakao" width="30px" height="30px"> 카카오로 시작하기</button>
-    </div>
-  </div>
+    </div><!-- social_buttons -->
+  </div><!-- login_container -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/script_all.js"></script>
-
   <script>
   // x 아이콘 터치 시 home으로 이동하기
   const closeBtn = document.querySelector('.close_btn');

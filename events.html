@@ -26,28 +26,28 @@
 </style>
 </head>
 <body>
-<div>
-  <h1>이벤트 페이지</h1>
-  <h2>준비 중입니다. 곧 만나요! 💖</h2>
-  <div class="header_left_group">
-    <a href="#" id="backBtn" class="header_btn">
-      <i class="fas fa-redo icon"></i>뒤로가기
-    </a>
+  <div>
+    <h1>이벤트 페이지</h1>
+    <h2>준비 중입니다. 곧 만나요! 💖</h2>
+    <div class="header_left_group">
+      <a href="#" id="backBtn" class="header_btn">
+        <i class="fas fa-redo icon"></i>뒤로가기
+      </a>
+    </div>
   </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="js/script_all.js"></script>
-<script>
-  const backBtn = document.getElementById('backBtn');
-  backBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (history.length > 1) {
-      history.back();
-    } else {
-      location.href = 'home.html';
-    }
-  });
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script_all.js"></script>
+  <script>
+    const backBtn = document.getElementById('backBtn');
+    backBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (history.length > 1) {
+        history.back();
+      } else {
+        location.href = 'home.html';
+      }
+    });
 </script>
 </body>
 </html>

@@ -23,31 +23,31 @@
     h2 { font-size: 1.2rem; }
     #backBtn { padding: 10px 20px; font-size: 0.9rem; }
   }
-</style>
+  </style>
 </head>
 <body>
-<div>
-  <h1>검색 페이지</h1>
-  <h2>곧 검색 기능이 준비됩니다! 🔍</h2>
-  <div class="header_left_group">
-    <a href="#" id="backBtn" class="header_btn">
-      <i class="fas fa-redo icon"></i>뒤로가기
-    </a>
+  <div>
+    <h1>검색 페이지</h1>
+    <h2>곧 검색 기능이 준비됩니다! 🔍</h2>
+    <div class="header_left_group">
+      <a href="#" id="backBtn" class="header_btn">
+        <i class="fas fa-redo icon"></i>뒤로가기
+      </a>
+    </div>
   </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="js/script_all.js"></script>
-<script>
-  const backBtn = document.getElementById('backBtn');
-  backBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (history.length > 1) {
-      history.back();
-    } else {
-      location.href = 'home.html';
-    }
-  });
-</script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script_all.js"></script>
+  <script>
+    const backBtn = document.getElementById('backBtn');
+    backBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (history.length > 1) {
+        history.back();
+      } else {
+        location.href = 'home.html';
+      }
+    });
+  </script>
 </body>
 </html>

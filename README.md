@@ -5,7 +5,16 @@
 ## 1. 프로젝트 디렉토리 구조(Directory Tree)
 ```
 UI구현
+├─ index.html
+├─ search.html
+├─ home.html
 ├─ cart.html
+├─ lounge.html
+├─ my_page.html
+├─ product_list.html
+├─ login.html
+├─ events.html
+├─ signup.html
 ├─ css
 │  ├─ cart.css
 │  ├─ home.css
@@ -15,8 +24,6 @@ UI구현
 │  ├─ product_list.css
 │  ├─ reset.css
 │  └─ style.css
-├─ events.html
-├─ home.html
 ├─ images
 │  ├─ cart_in1.jpg
 │  ├─ cart_in2.jpg
@@ -61,16 +68,10 @@ UI구현
 │  ├─ pro7.jpg
 │  ├─ pro8.jpg
 │  └─ pro9.jpg
-├─ index.html
 ├─ js
-│  ├─ script_all.js
-│  └─ script_home.js
-├─ login.html
-├─ lounge.html
-├─ my_page.html
-├─ product_list.html
-├─ search.html
-└─ signup.html
+   ├─ script_all.js
+   └─ script_home.js
+
 
 ```
 ## 2. 정보 구조(IA) 및 기능 매핑

@@ -217,7 +217,7 @@
   <div class="wish_header">
     <div class="left">
       <i class="fa-regular fas fa-heart"></i>
-      <span class="user_name">김미미</span>님의 관심상품
+      <span class="wish_title"></span>
     </div>
     <div class="right">
       <span>전체보기</span>
@@ -474,6 +474,21 @@ function update_timer() {
   
 setInterval(update_timer, 1000);
 update_timer();
+
+// 추천상품의 유저네임 표시
+document.addEventListener('DOMContentLoaded', () => {
+  const wishTitleEl = document.querySelector('.wish_title');
+  const loginUser = JSON.parse(sessionStorage.getItem('loginUser'));
+
+  if (loginUser && loginUser.name) {
+    wishTitleEl.innerHTML = `
+      <span class="highlight_name">${loginUser.name}</span>님의 관심상품
+    `;
+  } else {
+    wishTitleEl.textContent = '로그인하고 관심상품 확인하기';
+  }
+});
+
 
 </script>
 </body>

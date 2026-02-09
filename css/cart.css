@@ -21,7 +21,7 @@ margin-bottom: 6px; gap: 8px;}
 .delivery_address span { flex: 1; line-height: 1.4; word-break: break-word;}
 .delivery_address .btn_change {flex-shrink: 0; background-color: #fff; border: 1px solid #999; border-radius: 5px; color: #000; font-weight: 600; cursor: pointer; padding: 5px 10px; font-size: 12px;}
 .free_delivery {font-size: 12px; margin: 10px 5px 0;}
-.delivery_range { background: #e8e8e8; width: 100%; height: 6px; border-radius: 4px; position: relative;
+.delivery_range { background: #e8e8e8; width: 100%; height: 6px; border-radius: 4px; overflow: hidden; /* position: relative; */
 }
 .delivery_progress { height: 100%; background-color: #e8e8e8; border-radius: 4px; transition: width 0.3s;}
 .free_delivery.free .delivery_progress {background-color: #9344CB;}

@@ -8,11 +8,11 @@ $(function () {
   // 로그인 직후 여부 체크용
   const justLoggedIn = sessionStorage.getItem("justLoggedIn");
 
-  // 첫 페이지를 home로 지정
+// 처음 접속 시 home.html로 이동 (단, 현재 페이지가 home이 아닐 때만)
   const path = window.location.pathname;
-  if (path === "/" || path === "/BeautyKurly/" ) { 
-  window.location.href = "home.html";
-  return;
+  if ((path === "/" || path === "/BeautyKurly/") && !path.endsWith("home.html")) {
+    window.location.href = "home.html";
+    return; // 이동 후 아래 코드 실행 방지
 }
 
   console.log("savedUser:", savedUser);

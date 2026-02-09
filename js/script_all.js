@@ -1,23 +1,19 @@
 $(function () {
-
-  // 현재 페이지가 index.html이면 home.html로 이동
-  if (window.location.pathname.includes("index.html")) {
-    window.location.href = "home.html";
-    return; // 이동 후 아래 코드 실행 방지
-  }
-
   // localStorage: 회원가입 정보
   const savedUser = JSON.parse(localStorage.getItem("user"));
 
   // sessionStorage: 로그인 세션 정보
   const loginUser = JSON.parse(sessionStorage.getItem("loginUser"));
 
-
   // 로그인 직후 여부 체크용
   const justLoggedIn = sessionStorage.getItem("justLoggedIn");
 
-  // 현재 페이지 경로
+  // 첫 페이지를 home로 지정
   const path = window.location.pathname;
+  if (path === "/" || path === "/BeautyKurly/" ) { 
+  window.location.href = "home.html";
+  return;
+}
 
   console.log("savedUser:", savedUser);
   console.log("loginUser:", loginUser);

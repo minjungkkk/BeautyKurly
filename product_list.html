@@ -398,7 +398,7 @@ applyBtn.addEventListener('click', () => {
   /* 추천순, 필터 버튼 분리*/
   const sortBtn = document.querySelector('.sort_button');
   const sortList = document.querySelector('.sort_list');
-
+const sortItems = sortList.querySelectorAll('li');
   sortBtn.addEventListener('click', (e) => {
     e.stopPropagation(); // 이벤트 버블링 방지
     sortList.classList.toggle('active');
@@ -407,6 +407,21 @@ applyBtn.addEventListener('click', () => {
   // 바깥 클릭 시 닫기
   document.addEventListener('click', () => {
     sortList.classList.remove('active');
+  });
+
+  // 기본값: 추천순에서 다른 li로 전환 시 디폴트값 반영
+  let selectedSort = '추천순';
+
+  sortItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      selectedSort = e.target.textContent; // 선택값 저장
+      sortBtn.childNodes[0].textContent = selectedSort; // 버튼 텍스트 변경
+      sortList.classList.remove('active'); // 드롭다운 닫기
+
+      // 여기서 실제 정렬 함수 호출 가능
+      console.log('선택된 정렬:', selectedSort);
+      // sortProducts(selectedSort);
+    });
   });
 
   /* 필터 모달 열었을때 최상단화살표 비노출 */

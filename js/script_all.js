@@ -1,7 +1,10 @@
 $(function () {
 
-  // home에서 열리게 하기
-  window.location.href = "home.html";
+  // 현재 페이지가 index.html이면 home.html로 이동
+  if (window.location.pathname.includes("index.html")) {
+    window.location.href = "home.html";
+    return; // 이동 후 아래 코드 실행 방지
+  }
 
   // localStorage: 회원가입 정보
   const savedUser = JSON.parse(localStorage.getItem("user"));

@@ -20,7 +20,7 @@ $(function () {
 
 
   // 로그인 안 했는데 마이페이지 접근한 경우 → 로그인 페이지로 이동
-  if (!loginUser && path.includes("mypage.html")) {
+  if (!loginUser && path.includes("my_page.html")) {
     location.href = "login.html";
     return;
   }
@@ -63,6 +63,10 @@ $(function () {
   if (loginUser && $("#username").length) {
     $("#username").text(loginUser.name);
   }
+
+  $(".signup_btn").on("click", function () {
+  location.href = "signup.html";
+});
 
 
   // 회원가입 페이지: 회원가입 처리

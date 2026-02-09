@@ -1,6 +1,7 @@
 $(function () {
 
-  console.log("script_all.js loaded");
+  // home에서 열리게 하기
+  window.location.href = "home.html";
 
   // localStorage: 회원가입 정보
   const savedUser = JSON.parse(localStorage.getItem("user"));
@@ -64,6 +65,7 @@ $(function () {
     $("#username").text(loginUser.name);
   }
 
+  // 회원가입 버튼 클릭 시 회원가입 화면으로 이동
   $(".signup_btn").on("click", function () {
   location.href = "signup.html";
 });
@@ -135,12 +137,11 @@ $(function () {
 
   // 회원탈퇴 버튼 클릭 시 계정 삭제
   $("#sign_out").on("click", function () {
-    if (confirm("정말 회원탈퇴 하시겠습니까?")) {
+    if (confirm("회원탈퇴 시 모든 정보가 삭제되며 복구할 수 없습니다. 동의하시면 확인 버튼을 눌러주세요.")) {
       localStorage.removeItem("user");
       sessionStorage.removeItem("loginUser");
-      location.href = "signup.html";
+      alert("탈퇴가 완료되었습니다. 그동안 이용해주셔서 감사합니다.");
+      location.href = "home.html";
     }
   });
-
-
 });

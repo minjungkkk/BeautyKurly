@@ -43,9 +43,12 @@ body {background: #fff; width: 100%; min-width: 395px; margin: 0 auto;}
 .version {font-size: 12px; color: #777; margin-left: 6px;}
 
 .logout {padding: 0; text-align: left;}
-#logout_button {padding: 16px 0; text-align: left; font-weight: bold; background: none; border: none; cursor: pointer;}
+#logout_button {padding: 10px 0 20px 0; text-align: left; font-weight: bold; background: none; border: none; cursor: pointer;}
 #logout_button:focus {outline: none;}
 #logout_button:hover {text-decoration: underline;}
+
+.sign_out {color: #777; font-size: 12px; cursor: pointer; display: grid; grid-template-columns: 1fr 1fr; gap: 15px 16px;}
+.sign_out:hover {color: #e60023; text-decoration: underline;}
 
 .bottom_nav {position: fixed; bottom: 0; width: 100%; display: flex; border-top: 1px solid #ddd; background-color: #fff; cursor: pointer; padding: 0;}
 .bottom_nav a { flex: 1; text-align: center; padding: 8px 0; font-size: 11px; text-decoration: none;  color: inherit; display: flex; flex-direction: column; align-items: center; justify-content: center;}

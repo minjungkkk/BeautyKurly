@@ -2,7 +2,7 @@
 
 * { margin: 0;  padding: 0; box-sizing: border-box;}
 
-body {font-family: normal 16px/1.5em  'Pretendard', sans-serif;  background-color: #fff; color: #333;}
+body {font: normal 16px/1.5em  'Pretendard', sans-serif;  background-color: #fff; color: #333;}
 
 .header_wrap {height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; box-sizing: border-box; background-color: #fff; font-weight: 600;}
 .header_title {font-size: 20px; line-height: 1;}
@@ -37,6 +37,8 @@ body {font-family: normal 16px/1.5em  'Pretendard', sans-serif;  background-colo
 .sub_title i {font-size: 15px; margin-left: 5px;}
 .category_sub li .sub {list-style: none; margin: 0; padding: 0 0 15px 0;}
 .category_sub li .sub li a {padding: 10px 0; font-size: 14px; color: #555; line-height: 2.5em; text-decoration: none;}
+
+.category_main, .category_sub {scrollbar-width: none;}
 
 .bottom_nav {position: fixed; bottom: 0; width: 100%; display: flex; border-top: 1px solid #ddd; background-color: #fff; cursor: pointer; padding: 0;}
 .bottom_nav a { flex: 1; text-align: center; padding: 8px 0; font-size: 11px; text-decoration: none;  color: inherit; display: flex; flex-direction: column; align-items: center; justify-content: center;}

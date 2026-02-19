@@ -24,187 +24,196 @@
 </header><!-- header_wrap -->
 
 <section class="delivery_info">
-  <div class="delivery_tag">샛별배송</div>
-  <div class="delivery_address">
-    <span>서울시 노원구 가나다로 1길 2, 한국아파트 101동 001호</span>
-    <button class="btn_change">변경</button>
-  </div>
-  <div class="free_delivery free">
-  <span class="delivery_text">n원 추가 시 무료 배송</span>
-  <div class="delivery_range" >
-    <div class="delivery_progress"></div>
-  </div>
-</div>
+  <h2 class="blind">배송 정보</h2>
+    <div class="delivery_tag">샛별배송</div>
+    <div class="delivery_address">
+      <span>서울시 노원구 가나다로 1길 2, 한국아파트 101동 001호</span>
+      <button class="btn_change">변경</button>
+    </div>
+    <div class="free_delivery free">
+    <span class="delivery_text">n원 추가 시 무료 배송</span>
+    <div class="delivery_range" >
+      <div class="delivery_progress"></div>
+    </div>
+    </div>
 </section><!-- delivery_info -->
+
 <section class="cart_tabs">
-  <button class="tab active">담은 상품 <span class="item_count">2</span></button>
-  <button class="tab">자주 구매 상품</button>
+    <h2 class="blind">장바구니</h2>
+    <button class="tab active">담은 상품 <span class="item_count">2</span></button>
+    <button class="tab">자주 구매 상품</button>
 </section>
 
 <section class="cart_select">
-  <div class="select_left">
-    <input type="checkbox" id="script_all" checked>
-    <label for="script_all">전체선택</label>
-  </div>
-  <button class="select_delete">선택삭제</button>
+  <h2 class="blind">선택</h2>
+    <div class="select_left">
+      <input type="checkbox" id="script_all" checked>
+      <label for="script_all">전체선택</label>
+    </div>
+    <button class="select_delete">선택삭제</button>
 </section><!-- cart_select -->
 
 <section class="cart_items cart_saved active">
-  <div class="cart_item">
-    <div class="item_left">
-      <img src="images/cart_in1.jpg" alt="상품1">
-      <div class="item_count">
-        <button class="minus">-</button>
-        <span>1</span>
-        <button class="plus">+</button>
+  <h2 class="blind">담은 상품</h2>
+    <div class="cart_item">
+      <div class="item_left">
+        <img src="images/cart_in1.jpg" alt="상품1">
+        <div class="item_count">
+          <button class="minus">-</button>
+          <span>1</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div class="item_right">
+        <input type="checkbox">
+        <div class="item_name">[포트레] 핸드 크림 누보30ml</div>
+        <div class="item_price">
+          <div class="before">20,000원</div>
+          <div class="after">16,150원</div>
+        </div>
       </div>
     </div>
-    <div class="item_right">
-      <input type="checkbox">
-      <div class="item_name">[포트레] 핸드 크림 누보30ml</div>
-      <div class="item_price">
-        <div class="before">20,000원</div>
-        <div class="after">16,150원</div>
-      </div>
-    </div>
-  </div>
 
-  <div class="cart_item">
-    <div class="item_left">
-      <img src="images/cart_in2.jpg" alt="상품2">
-      <div class="item_count">
-        <button class="minus">-</button>
-        <span>1</span>
-        <button class="plus">+</button>
+    <div class="cart_item">
+      <div class="item_left">
+        <img src="images/cart_in2.jpg" alt="상품2">
+        <div class="item_count">
+          <button class="minus">-</button>
+          <span>1</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div class="item_right">
+        <input type="checkbox">
+        <div class="item_name">[에스트라] 아토베리어365 클렌징밀크 200ml (+밀크 30ml)</div>
+        <div class="item_price">
+          <div class="before">29,000원</div>
+          <div class="after">22,620원</div>
+        </div>
       </div>
     </div>
-    <div class="item_right">
-      <input type="checkbox">
-      <div class="item_name">[에스트라] 아토베리어365 클렌징밀크 200ml (+밀크 30ml)</div>
-      <div class="item_price">
-        <div class="before">29,000원</div>
-        <div class="after">22,620원</div>
-      </div>
-    </div>
-  </div>
 </section><!-- cart_items cart_saved active -->
 
 <section class="cart_items cart_frequent">
-  <div class="frequent_header">
-    <span class="filter_text">빈도순<i class="fa-solid fa-chevron-down"></i></span>
-  </div>
+  <h2 class="blind">자주 구매 상품</h2>
+    <div class="frequent_header">
+      <span class="filter_text">빈도순<i class="fa-solid fa-chevron-down"></i></span>
+    </div>
 
-  <p class="empty_text">최근 구매한 상품이 없습니다.</p>
-  <a href="home.html"><button class="go_shopping">쇼핑하러 가기</button></a>
+    <p class="empty_text">최근 구매한 상품이 없습니다.</p>
+    <button class="go_shopping" onclick="location.href='home.html'">쇼핑하러 가기</button>
 </section><!-- cart_items cart_frequent -->
 
 <section class="cart_summary">
-  <div class="summary_row">
-    <span>상품금액</span>
-    <span>38,770원</span>
-  </div>
-  <div class="summary_row">
-    <span>상품할인금액</span>
-    <span class="discount">-10,230원</span>
-  </div>
-  <div class="summary_row">
-    <span>배송비</span>
-    <span>2,500원</span>
-  </div>
+  <h2 class="blind">주문 요약</h2>
+    <div class="summary_row">
+      <span>상품금액</span>
+      <span>38,770원</span>
+    </div>
+    <div class="summary_row">
+      <span>상품할인금액</span>
+      <span class="discount">-10,230원</span>
+    </div>
+    <div class="summary_row">
+      <span>배송비</span>
+      <span>2,500원</span>
+    </div>
 </section><!-- cart_summary -->
 
-<section class="total_pay"> 
-  <span class="total_price">41,270원</span> 주문하기</section><!-- total_pay -->
+<section class="total_pay">
+  <h2 class="blind">총 결제 금액</h2>
+    <span class="total_price">41,270원</span> 주문하기</section><!-- total_pay -->
 
 <section class="recommend_products">
-  <div class="recommend_title">
-    <i class="fas fa-star"></i>
-    <span>건조한 겨울에 어울리는 상품 추천</span>
-  </div>
-  <div class="recommend_list">
-    <div class="rec_item">
-      <p class="delivery_tag">샛별배송</p>
-      <img src="images/cart_rec1.jpg" alt="recommend_products">
-      <div class="rec_name">[라부르켓] BEST 립 밤 3종 (택1)</div>
-      <p class="product_price_before">27,000원</p>
-        <p class="product_price">
-          <span class="discount">10%</span>
-          <span class="price">24,300원</span>
-        </p>
-        <div class="product_icon">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="rec_item">
-      <p class="delivery_tag">샛별배송</p>
-      <img src="images/cart_rec2.jpg" alt="recommend_products">
-      <div class="rec_name">[눅스] 메르비앙스 리프트 오일세럼 30ml</div>
-      <p class="product_price_before">74,000원</p>
-        <p class="product_price">
-          <span class="discount">10%</span>
-          <span class="price">66,600원</span>
-        </p>
-        <div class="product_icon">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="rec_item">
-      <p class="delivery_tag">샛별배송</p>
-      <img src="images/cart_rec3.jpg" alt="recommend_products">
-      <div class="rec_name">[디어달리아] 파라다이스 블루밍밤 3.1g</div>
-      <p class="product_price_before">28,000원</p>
-        <p class="product_price">
-          <span class="discount">10%</span>
-          <span class="price">25,200원</span>
-        </p>
-        <div class="product_icon">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="rec_item">
-      <p class="delivery_tag">샛별배송</p>
-      <img src="images/cart_rec4.jpg" alt="recommend_products">
-      <div class="rec_name">[키엘] 울트라 훼이셜 어드밴스드 리페어 베리어 크림 50ml</div>
-      <p class="product_price_before">82,000원</p>
-        <p class="product_price">
-          <span class="discount">15%</span>
-          <span class="price">69,700원</span>
-        </p>
-        <div class="product_icon">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="rec_item">
-      <p class="delivery_tag">샛별배송</p>
-      <img src="images/cart_rec5.jpg" alt="recommend_products">
-      <div class="rec_name">[닥터지] 블랙 스네일 크림 50ml*2개 (+크림15ml증정)</div>
-      <p class="product_price_before">54,000원</p>
-        <p class="product_price">
-          <span class="discount">48%</span>
-          <span class="price">28,000원</span>
-        </p>
-        <div class="product_icon">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </div>
-    <div class="rec_item">
-      <p class="delivery_tag">샛별배송</p>
-      <img src="images/cart_rec6.jpg" alt="recommend_products">
-      <div class="rec_name">[라로슈포제]시카플라스트 밤 B5+ 100ml/ 40ml(택1)</div>
-      <p class="product_price_before">41,000원</p>
-        <p class="product_price">
-          <span class="discount">20%</span>
-          <span class="price">32,800원</span>
-        </p>
-        <div class="product_icon">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+  <h2 class="blind">추천 상품</h2>
+    <div class="recommend_title">
+      <i class="fas fa-star"></i>
+      <span>건조한 겨울에 어울리는 상품 추천</span></div>
+    <div class="recommend_list">
+      <div class="rec_item">
+        <p class="delivery_tag">샛별배송</p>
+        <img src="images/cart_rec1.jpg" alt="recommend_products">
+        <div class="rec_name">[라부르켓] BEST 립 밤 3종 (택1)</div>
+        <p class="product_price_before">27,000원</p>
+          <p class="product_price">
+            <span class="discount">10%</span>
+            <span class="price">24,300원</span>
+          </p>
+          <div class="product_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+      </div>
+      <div class="rec_item">
+        <p class="delivery_tag">샛별배송</p>
+        <img src="images/cart_rec2.jpg" alt="recommend_products">
+        <div class="rec_name">[눅스] 메르비앙스 리프트 오일세럼 30ml</div>
+        <p class="product_price_before">74,000원</p>
+          <p class="product_price">
+            <span class="discount">10%</span>
+            <span class="price">66,600원</span>
+          </p>
+          <div class="product_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+      </div>
+      <div class="rec_item">
+        <p class="delivery_tag">샛별배송</p>
+        <img src="images/cart_rec3.jpg" alt="recommend_products">
+        <div class="rec_name">[디어달리아] 파라다이스 블루밍밤 3.1g</div>
+        <p class="product_price_before">28,000원</p>
+          <p class="product_price">
+            <span class="discount">10%</span>
+            <span class="price">25,200원</span>
+          </p>
+          <div class="product_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+      </div>
+      <div class="rec_item">
+        <p class="delivery_tag">샛별배송</p>
+        <img src="images/cart_rec4.jpg" alt="recommend_products">
+        <div class="rec_name">[키엘] 울트라 훼이셜 어드밴스드 리페어 베리어 크림 50ml</div>
+        <p class="product_price_before">82,000원</p>
+          <p class="product_price">
+            <span class="discount">15%</span>
+            <span class="price">69,700원</span>
+          </p>
+          <div class="product_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+      </div>
+      <div class="rec_item">
+        <p class="delivery_tag">샛별배송</p>
+        <img src="images/cart_rec5.jpg" alt="recommend_products">
+        <div class="rec_name">[닥터지] 블랙 스네일 크림 50ml*2개 (+크림15ml증정)</div>
+        <p class="product_price_before">54,000원</p>
+          <p class="product_price">
+            <span class="discount">48%</span>
+            <span class="price">28,000원</span>
+          </p>
+          <div class="product_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+      </div>
+      <div class="rec_item">
+        <p class="delivery_tag">샛별배송</p>
+        <img src="images/cart_rec6.jpg" alt="recommend_products">
+        <div class="rec_name">[라로슈포제]시카플라스트 밤 B5+ 100ml/ 40ml(택1)</div>
+        <p class="product_price_before">41,000원</p>
+          <p class="product_price">
+            <span class="discount">20%</span>
+            <span class="price">32,800원</span>
+          </p>
+          <div class="product_icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+      </div>
     </div>
 </section><!-- recommend_products -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

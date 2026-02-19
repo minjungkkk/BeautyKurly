@@ -12,7 +12,7 @@ $(function () {
   const path = window.location.pathname;
   if ((path === "/" || path === "/BeautyKurly/") && !path.endsWith("home.html")) {
     window.location.href = "home.html";
-    return; // 이동 후 아래 코드 실행 방지
+    return;
 }
 
   console.log("savedUser:", savedUser);

@@ -49,7 +49,7 @@ border-radius: 10px;}
 .cart_frequent {display: none;}
 .frequent_header {display: flex; justify-content: flex-end; padding: 12px 16px; font-size: 14px; color: #666;}
 .empty_text {text-align: center;}
-.go_shopping {display: flex; margin:10px auto;}
+.go_shopping {display: flex; margin:20px auto; padding: 10px 20px; background: #57047D; color: #fff; border-color: #666; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;}
 
 
 .item_right {flex: 1;}
@@ -90,3 +90,5 @@ border-radius: 10px;}
 .product_icon i {transition: transform 0.15s ease, color 0.15s ease;}
 .product_icon i:hover {color: #555;}
 .product_icon i:active {transform: scale(0.8);}
+
+.blind { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap;}

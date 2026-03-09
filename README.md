@@ -35,7 +35,9 @@ UI구현
 │  ├─ cart_rec4.jpg
 │  ├─ cart_rec5.jpg
 │  ├─ cart_rec6.jpg
-│  ├─ Favicon.png
+│  ├─ favicon_192.png
+│  ├─ favicon_512.png
+│  ├─ favicon.ico
 │  ├─ Frame 77.jpg
 │  ├─ home1.jpg
 │  ├─ home2.jpg
